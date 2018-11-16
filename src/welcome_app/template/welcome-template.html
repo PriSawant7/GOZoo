@@ -1,0 +1,42 @@
+
+<html>
+   <head>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="/static/stylesheets/welcome-template.css">
+
+         <!-- The welcome struct (shown in the main.go code) is received within the HTML and we just need to use the . operator and retrieve the information we want -->
+         <title>Welcome {{.Name}}</title>
+   </head>
+   <body>
+      <div class="welcome center">Welcome {{.Name}}, it is {{.Time}}</div>
+      <div class="welcome"> Fall is here!!! </div>
+      <div class="fallcolors"> Check some beautiful places to see fall colors.</div>
+      <input type="button" class="button1" name="Click" value="Click" onClick="myFunction();">
+
+            <div id="myDIV">
+                    <img src="/static/stylesheets/1.jpg">
+                    <img src="/static/stylesheets/2.jpeg">
+
+                    <img src="/static/stylesheets/3.jpeg">
+
+                    <img src="/static/stylesheets/4.jpeg">
+
+                    </div>
+
+
+
+
+            <script>
+                    function myFunction() {
+                        var x = document.getElementById("myDIV");
+                        if (x.style.display === "none") {
+                            x.style.display = "block";
+                        } else {
+                            x.style.display = "none";
+                        }
+                    }
+                    </script>
+             </body>
+
+            
+</html>
